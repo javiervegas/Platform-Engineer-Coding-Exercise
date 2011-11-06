@@ -3,10 +3,10 @@ Ticketfly Platform Engineer Coding Exercise
 
 ## Simple Server
 
-Write a simple server that will bind to a port and listen for TCP requests. The server should not run in a
-container. It should be able to be started with a 'java -jar TflyServer.jar'. The server should accept string
-requests and give string responses. I should be able to connect to the server and execute a request with
-something simple like telnet:
+Write a simple server in a JVM language of your choosing that will bind to a port and listen for TCP requests. 
+The server should not run in a container. It should be able to be started with a 'java -jar TflyServer.jar'. The 
+server should accept string requests and give string responses. I should be able to connect to the server and 
+execute a request with something simple like telnet:
 
     > telnet localhost 4567
     telnet> my_request_string
