@@ -62,6 +62,6 @@ If I execute a request including a sequence number, I should see something like
 
 ## Submission
 
-Send the code and executable jar to aheadrick@ticketfly.com.
+Send the code and executable jar to [code@ticketfly.com].
 
 
