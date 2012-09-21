@@ -65,3 +65,23 @@ If I execute a request including a sequence number, I should see something like
 Send the code and executable jar to [code@ticketfly.com].
 
 
+## The Solution
+
+The present solution handles concurrent requests by the use of Nio, continuations and actors. Invalid requests are handled by closing the connections that sent them. Connections that send valid requests are kept open so more requests can be sent over. 
+
+The server can be run from the sbt project
+```
+sbt run
+```
+or from a jar (included in the target folder of the project for convenience)
+```
+java -jar TflyServer.jar
+```
+The project also includes tests that can be run via
+```
+sbt test
+```
+and the jar can be generated via
+```
+sbt assembly
+```  
